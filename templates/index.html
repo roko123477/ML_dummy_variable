@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>ML_DUMMY_PREDICTION</title>
+</head>
+<body>
+    <form class="form" method="POST" action="/sub">
+        <h2>AREA</h2>
+        <input class="area"  type="text" id="uiscore"  name="area">
+
+        <h2>Location</h2>
+    <select class="location" name="loc" id="uiLocations">
+		<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option name="loc" value="monroe township">monroe township</option>
+        <option name="loc" value="robinsville">robinsville</option>
+        <option name="loc" value="west windsor">west windsor</option>
+  </select>
+  
+	<button class="submit"  type="submit">Predict</button>
+	<div id="uiEstimatedPrice" class="result">	<h3>{{n}}</h3> </div>
+</form> 
+</body>
+</html>
